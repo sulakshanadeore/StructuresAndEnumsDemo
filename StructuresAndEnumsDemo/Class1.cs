@@ -11,6 +11,68 @@ namespace StructuresAndEnumsDemo
     }
 
 
+    struct SiteUser
+    {
+        //WriteOnly property
+        string _pwd;
+        public string Password
+        {
+            set { _pwd = value; }//assign a password
+
+
+        }
+
+        string _verifycaptcha;
+        public string VerifyCaptcha
+        {
+            set {
+                _verifycaptcha = value;
+                if (_verifycaptcha == _c)
+                {
+                    Console.WriteLine("Valid");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid");
+                }
+
+            }
+        }
+
+        string _c;
+        public void WorkWithCaptcha()
+        {
+            _c = "AFH876";
+            Console.WriteLine(_c);
+        }
+        
+    //    //Writeonly
+    //    string _c;
+    //    public string SetCaptcha
+    //    {
+    //        set {
+    //            _c = value;
+    //        }
+    //    }
+
+
+   
+
+    ////Readonly
+    //    public string ShowCaptcha
+    //    {
+           
+    //        get {
+    //            SetCaptcha= "AFH876";
+    //            return _c;
+    //                }
+        
+    //    }
+
+
+    }
+
+
     struct Students
     {
         int _rollno;//field/variable

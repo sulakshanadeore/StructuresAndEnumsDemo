@@ -11,22 +11,30 @@ namespace StructuresAndEnumsDemo
         static void Main(string[] args)
         {
 
-            Students s1 = new Students();
-            Console.WriteLine("Enter Rollno");
-            s1.Rollno=Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter Name of the student");
-            s1.StudentName = Console.ReadLine();
-            Console.WriteLine("Enter Admission Date of the student");
-            s1.AdmissionDate = Convert.ToDateTime(Console.ReadLine());
+            SiteUser s = new SiteUser();
+            //Console.WriteLine(s.ShowCaptcha);
+            s.WorkWithCaptcha();
+
+            Console.WriteLine("enter Captcha");
+            s.VerifyCaptcha = Console.ReadLine();
+
+            //Students s1 = new Students();
+            //Console.WriteLine("Enter Rollno");
+            //s1.Rollno=Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Enter Name of the student");
+            //s1.StudentName = Console.ReadLine();
+            //Console.WriteLine("Enter Admission Date of the student");
+            //s1.AdmissionDate = Convert.ToDateTime(Console.ReadLine());
 
 
 
-            Console.WriteLine("Printing Student Details");
-            int myRollno=s1.Rollno;
-            Console.WriteLine(myRollno);
-            Console.WriteLine(s1.StudentName);
-            Console.WriteLine(s1.AdmissionDate);
+            //Console.WriteLine("Printing Student Details");
+            //int myRollno=s1.Rollno;
+            //Console.WriteLine(myRollno);
+            //Console.WriteLine(s1.StudentName);
+            //Console.WriteLine(s1.AdmissionDate);
             //Console.WriteLine(s1.Rollno);
 
 
