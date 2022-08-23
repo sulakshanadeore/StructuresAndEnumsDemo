@@ -10,23 +10,34 @@ namespace StructuresAndEnumsDemo
     {
         static void Main(string[] args)
         {
+            //Console.WriteLine(Weekdays.Monday);
 
-            Students s1 = new Students();
-            Console.WriteLine("Enter Rollno");
-            s1.Rollno=Convert.ToInt32(Console.ReadLine());
+            //int day =(int) Weekdays.Friday;
+            //Console.WriteLine(day);
 
-            Console.WriteLine("Enter Name of the student");
-            s1.StudentName = Console.ReadLine();
-            Console.WriteLine("Enter Admission Date of the student");
-            s1.AdmissionDate = Convert.ToDateTime(Console.ReadLine());
+            Console.WriteLine("enter day");
+            int day = Convert.ToInt32(Console.ReadLine());
+
+            var nameofDay = (Weekdays)day;
+            Console.WriteLine(nameofDay);
+
+
+            //Students s1 = new Students();
+            //Console.WriteLine("Enter Rollno");
+            //s1.Rollno=Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Enter Name of the student");
+            //s1.StudentName = Console.ReadLine();
+            //Console.WriteLine("Enter Admission Date of the student");
+            //s1.AdmissionDate = Convert.ToDateTime(Console.ReadLine());
 
 
 
-            Console.WriteLine("Printing Student Details");
-            int myRollno=s1.Rollno;
-            Console.WriteLine(myRollno);
-            Console.WriteLine(s1.StudentName);
-            Console.WriteLine(s1.AdmissionDate);
+            //Console.WriteLine("Printing Student Details");
+            //int myRollno=s1.Rollno;
+            //Console.WriteLine(myRollno);
+            //Console.WriteLine(s1.StudentName);
+            //Console.WriteLine(s1.AdmissionDate);
             //Console.WriteLine(s1.Rollno);
 
 
