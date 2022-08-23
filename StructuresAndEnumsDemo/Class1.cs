@@ -53,6 +53,8 @@ namespace StructuresAndEnumsDemo
         }
 
 
+
+
         DateTime _admissionDate;
         public DateTime AdmissionDate
         {
